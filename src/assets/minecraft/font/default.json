@@ -1,17 +1,84 @@
 {
-	"providers": [{
-			"type": "bitmap",
-			"file": "ranks:admin.png",
-			"ascent": 8,
-			"height": 9,
-			"chars": ["\u060E"]
-		},
-		{
-			"type": "bitmap",
-			"file": "minecraft:font/logo.png",
-			"ascent": 8,
-			"height": 62,
-			"chars": ["\u060F"]
-		}
-	]
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "ranks:owner.png",
+      "ascent": 8,
+      "height": 9,
+      "//": "؀",
+      "chars": ["\u0600"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ranks:manager.png",
+      "ascent": 8,
+      "height": 9,
+      "//": "؁",
+      "chars": ["\u0601"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ranks:king.png",
+      "ascent": 8,
+      "height": 9,
+      "//": "؂",
+      "chars": ["\u0602"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ranks:duke.png",
+      "ascent": 8,
+      "height": 9,
+      "//": "؃",
+      "chars": ["\u0603"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ranks:paladin.png",
+      "ascent": 8,
+      "height": 9,
+      "//": "؄",
+      "chars": ["\u0604"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ranks:baron.png",
+      "ascent": 8,
+      "height": 9,
+      "//": "؅",
+      "chars": ["\u0605"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ranks:lord.png",
+      "ascent": 8,
+      "height": 9,
+      "//": "؆",
+      "chars": ["\u0606"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ranks:knight.png",
+      "ascent": 8,
+      "height": 9,
+      "//": "؇",
+      "chars": ["\u0607"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ranks:villein.png",
+      "ascent": 8,
+      "height": 9,
+      "//": "؈",
+      "chars": ["\u0608"]
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/logo.png",
+      "ascent": 8,
+      "height": 62,
+      "//": "؉",
+      "chars": ["\u0609"]
+    }
+  ]
 }
