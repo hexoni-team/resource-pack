@@ -13,10 +13,10 @@ jobs:
       - name: Create Archive Release
         uses: thedoctor0/zip-release@master
         with:
-          filename: 'release.zip'
+          filename: 'Hexoni.zip'
           exclusions: '*.git*'
       - name: Upload Release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: 'release.zip'
+          artifacts: 'Hexoni.zip'
           token: ${{ secrets.TOKEN_GITHUB }}
