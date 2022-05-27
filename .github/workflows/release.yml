@@ -16,7 +16,7 @@ jobs:
           filename: 'Hexoni.zip'
           exclusions: '*.git*'
       - name: Sha1sum
-        run: sha1sum Hexoni.zip > sha1.txt
+        run: sha1sum package.json | cut -f 1 -d " " > sha1.txt
       - name: Upload Release
         uses: ncipollo/release-action@v1
         with:
