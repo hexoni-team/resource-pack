@@ -2,7 +2,8 @@ name: Zip Release
 
 on:
   push:
-    branches: [ master ]
+    tags:
+      - '*'
 
 jobs:
   build:
