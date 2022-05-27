@@ -1,28 +1,18 @@
-
-name: CI
+name: Release
 
 on:
   release:
-      types: [published]
-  
+    types: [published]
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  test:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: MCJack123/ghaction-generate-release-hashes@v1
-        with:
-          hash-type: sha1
-          file-name: hash.txt
-      - uses: actions/upload-artifact@v2
-        with:
-          name: Asset Hashes
-          path: hash.txt
+    - uses: MCJack123/ghaction-Generate-Release-Hashes@v1
+      with:
+        hash-type: sha1
+        file-name: hash.txt
+    - uses: actions/upload-artifact@v2
+      with:
+        name: Asset Hashes
+        path: hashes.txt
