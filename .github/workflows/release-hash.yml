@@ -11,7 +11,8 @@ jobs:
     - uses: MCJack123/ghaction-Generate-Release-Hashes@v1
       with:
         file-name: hashes.txt
-    - uses: actions/upload-artifact@v2
+    - name: Asset Hashes
+      uses: ncipollo/release-action@v1
       with:
-        name: Asset Hashes
-        path: hashes.txt
+        artifacts: 'hashes.txt'
+        token: ${{ secrets.TOKEN_GITHUB }}
