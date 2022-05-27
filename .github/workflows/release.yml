@@ -1,9 +1,9 @@
 name: Zip Release
 
 on:
-  push:
+  create:
     tags:
-      - '*'
+      - v*
 
 jobs:
   build:
