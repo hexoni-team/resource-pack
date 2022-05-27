@@ -16,4 +16,5 @@ jobs:
     - uses: ncipollo/release-action@v1
       with:
         artifacts: "Hexoni.zip"
+        bodyFile: "body.md"
         token: ${{ secrets.TOKEN_GITHUB }}
