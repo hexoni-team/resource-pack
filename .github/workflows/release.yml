@@ -15,8 +15,10 @@ jobs:
         with:
           filename: 'Hexoni.zip'
           exclusions: '*.git*'
+      - name: Sha1sum
+        run: sha1sum Hexoni.zip > sha1.txt
       - name: Upload Release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: 'Hexoni.zip'
+          artifacts: 'Hexoni.zip,sha1.txt'
           token: ${{ secrets.TOKEN_GITHUB }}
